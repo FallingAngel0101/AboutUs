@@ -1,0 +1,181 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2d3748;
+}
+
+.reviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+
+
+.emptyMessage {
+  font-size: 1.2rem;
+  color: #718096;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* MyReviewsPage.module.css */
+
+.sortButtons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: right;
+}
+
+.userProfileContent {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.sortButton {
+  padding: 8px 16px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  font-weight: 500;
+}
+
+.sortButton:hover {
+  background-color: #d5d5d5;
+}
+
+.infoSection {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.avatarSection {
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.descriptionBlock {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #2196f3;
+  color: #555;
+  margin-top: 1rem;
+}
+
+.sortButton.active {
+  background-color: #1976d2;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.reviewCard {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 16px;
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.ratingValue {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.reviewDate {
+  font-size: 13px;
+  color: #777;
+  margin-left: auto;
+}
+
+.reviewComment {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  color: #333;
+}
+
+.reviewAuthor {
+  font-size: 14px;
+  color: #555;
+}
+
+.summary {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid #3498db;
+}
+
+.summaryItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.summaryLabel {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.ratingValue {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.totalReviews {
+  font-weight: bold;
+  font-size: 18px;
+  color: #3498db;
+}
+
+/* Остальные существующие стили остаются без изменений */

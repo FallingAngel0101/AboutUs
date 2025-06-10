@@ -1,0 +1,98 @@
+.header {
+  background-color: #a086aa;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 1.5rem;
+}
+
+.navItem {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: opacity 0.2s;
+}
+
+.navItem:hover {
+  opacity: 0.8;
+}
+
+.navItem::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.navItem:hover::after {
+  width: 100%;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.authButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.authButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #fff;
+  background-color: #6b5b7a;
+}
+
+.authButton:hover {
+  background-color: #5e4f6a;
+  border-color: #d1c4e9;
+}
+
+.authButton span {
+  font-size: 14px;
+}

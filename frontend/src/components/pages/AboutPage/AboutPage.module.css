@@ -1,0 +1,23 @@
+.aboutPage {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aboutTitle {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
